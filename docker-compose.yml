@@ -1,0 +1,11 @@
+version: "2"
+services:
+  mongodb:
+    container_name: mongodb
+    build:
+        context: .
+        dockerfile: Dockerfile
+    volumes:
+      - data-volume:/data/db
+volumes:
+  data-volume:
