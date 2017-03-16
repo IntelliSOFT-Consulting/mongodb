@@ -6,6 +6,6 @@ services:
         context: .
         dockerfile: Dockerfile
     volumes:
-      - data-volume:/data/db
+      - mongodb-data:/data/db
 volumes:
-  data-volume:
+  mongodb-data:
